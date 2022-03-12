@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<meta charset="UFT-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Business Directory</title>
+    <link rel ="stylesheet" href="./stylemarvel.css">
+    <link href="./css/bootstrap.min.css"rel="stylesheet"/>
+
+</head>
+<body>
+<!--Header Starts-->
+  <header>
+    <!--Navigation Start-->
+    <nav>
+      <div class="flex align-items-center">
+          <img src="./Asset/Marvel business logo_ccexpress.png" alt="brand-logo"/>
+      </div>
+      <div class="navbar-items">
+        <a href="#">Directory</a>
+        <a href="#">Our team</a>
+        <a href="#">Contact us</a>
+        <button class="button cart-button"> Sign up </button>
+        <button class="button cart-button"> login </button>
+       </div>
+    </nav>
+    <br>
+  <!--Navigation Ends-->
+  </header>
+<!--Header Ends-->
+<!--Main Starts-->
+<main>
+    <div class="container">
+    <section class="mb-4">
+        <!--Title-->
+        <h2 class="h1-responsive font-weight-bold text-center my-4">We love to hear from you!</h2>
+        <br>
+        <!--Form fields-->
+        <div id="ContactForm" class="row justify-content-center align-items-center">
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="contactform.php" method="POST">
+
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="name" name="name" class="form-control">
+                                <label for="name" class="">Name</label>
+                                <br>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 row justify-content-center align-items-center">
+                            <div class="md-form mb-0">
+                                <input type="text" id="email" name="email" class="form-control">
+                                <label for="email" class="">Email</label>                          
+                        <br>                            
+                            </div>
+                        </div>
+                        <br>
+
+                    <div class="row row justify-content-center align-items-center">
+                        <div class="col-md-12">
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                <label for="message">Message</label>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="text-center text-md-left">
+                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                </div>
+                <div class="status"></div>
+                </div>
+            </div>
+                 </div>
+        </div>
+    </div>
+    </section>
+</main>
+<!--Start of Footer-->
+<br>
+  <footer>
+    <section id="grey-footer">
+        we make it easy to find genuine businesses in Aberdeen
+    </section>
+    <section id="dark-footer">
+        &copy; Copyright 2021, M Team
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+</html>
